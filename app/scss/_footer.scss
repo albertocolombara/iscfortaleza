@@ -1,0 +1,46 @@
+footer {
+    & .container {
+
+        & .footer-wrapper {
+            border-top: 6px solid #171717;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            & .footer-menu {
+                color: $text-alt-color;    
+
+                & ul li {
+                    margin-bottom: 10px;
+
+                    & a {
+                        color: $text-alt-color;  
+                    }
+                }
+            }
+
+            & .footer-infos {
+                color: $text-alt-color;    
+
+                & h4 {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+
+                & span {
+                    display: inline-block;
+                    margin-top: 10px;
+                    line-height: 1.7;
+                }
+
+                &-endereco {
+                    margin: 30px 0;
+                }
+            }
+        }
+    }
+
+    
+}

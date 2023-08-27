@@ -1,0 +1,32 @@
+header {
+    background-color: $bg-black-color;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    height: 90px;
+
+    & .nav-logo {
+        width: 85%;
+    }
+
+    & .menu-mobile, .close-menu-mobile {
+        display: none;
+    }
+
+    & .header-menu {
+        display: flex;
+        gap: 40px;
+
+        & a {
+            color: $white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+    }
+}
+

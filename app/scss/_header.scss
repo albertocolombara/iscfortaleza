@@ -1,61 +1,67 @@
 header {
     background-color: $bg-black-color;
-}
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0px 4px 16px rgba(17,17,26,0.2), 0px 8px 24px rgba(17,17,26,0.2), 0px 16px 56px rgba(17,17,26,0.2);
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px 0;
-    height: 90px;
-
-    & .nav-logo {
-        width: 85%;
-    }
-
-    & .header-menu {
+    nav {
         display: flex;
-        gap: 40px;
-
-        & li a {
-            color: $white;
-            font-size: 18px;
-            font-weight: bold;
-            transition: opacity .3s;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0;
+        height: 90px;
+    
+        & .nav-logo {
+            width: 85%;
         }
-
-        & li:not(:last-of-type) a:hover {
-            opacity: .6;
-        }
-
-        & li:last-of-type a {
-            background-color: $main-color;
-            color: $white;
-            padding: 12px 18px;
-            transition: box-shadow .3s ease-in-out;
-        }
-
-        & li:last-of-type a:hover {
-            box-shadow: rgba(241, 61, 6, 0.3) 0px 3px 14px, rgba(236, 50, 4, 0.3) 0px 3px 36px, rgba(238, 41, 6, 0.3) 0px 3px 30px;
-
+    
+        & .header-menu {
+            display: flex;
+            gap: 40px;
+    
+            & li a {
+                color: $white;
+                font-size: 18px;
+                font-weight: bold;
+                transition: opacity .3s;
+            }
+    
+            & li:not(:last-of-type) a:hover {
+                opacity: .6;
+            }
+    
+            & li:last-of-type a {
+                background-color: $main-color;
+                color: $white;
+                padding: 12px 18px;
+                transition: box-shadow .3s ease-in-out;
+            }
+    
+            & li:last-of-type a:hover {
+                box-shadow: rgba(241, 61, 6, 0.3) 0px 3px 14px, rgba(236, 50, 4, 0.3) 0px 3px 36px, rgba(238, 41, 6, 0.3) 0px 3px 30px;
+    
+            }
         }
     }
+    
 }
+
 
 // Menu Abrir e Fechar
 
-nav .menu-mobile, nav .close-menu-mobile {
+header nav .menu-mobile, nav .close-menu-mobile {
     display: block;
     cursor: pointer;
 }
 
-nav .menu-mobile {
+header nav .menu-mobile {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-nav #header-menu .close-menu-mobile {
+header nav #header-menu .close-menu-mobile {
     position: absolute;
     top: 20px;
     left: 30px;

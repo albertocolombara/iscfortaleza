@@ -16,6 +16,11 @@ footer {
 
                     & a {
                         color: $text-alt-color;  
+                        transition: opacity .3s;
+                    }
+
+                    & a:hover {
+                        opacity: .4;
                     }
                 }
             }

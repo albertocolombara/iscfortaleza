@@ -185,7 +185,6 @@
     height: 100%;
     padding: 100px 0;
     background-color: $white;
-    // background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(237,3,32,0.87) 20.8%, rgba(242, 77, 1, 0.84) 74.4% );
 
     & .container {
         height: 100%;
@@ -216,8 +215,6 @@
             }
 
         }
-
-
 
         & .parceiros {
             margin-top: 50px;
@@ -286,6 +283,14 @@
         
         & h3 {
             font-size: $semi-medium-text !important;
+        }
+
+        & a:hover {
+            transition: opacity .3s;
+        }
+
+        & a:hover {
+            opacity: .4;
         }
     }
 }

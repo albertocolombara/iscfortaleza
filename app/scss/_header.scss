@@ -13,17 +13,13 @@ nav {
         width: 85%;
     }
 
-    & .menu-mobile, .close-menu-mobile {
-        display: none;
-    }
-
     & .header-menu {
         display: flex;
         gap: 40px;
 
         & li a {
             color: $white;
-            font-size: 14px;
+            font-size: 18px;
             font-weight: bold;
             transition: opacity .3s;
         }
@@ -43,7 +39,64 @@ nav {
             box-shadow: rgba(241, 61, 6, 0.3) 0px 3px 14px, rgba(236, 50, 4, 0.3) 0px 3px 36px, rgba(238, 41, 6, 0.3) 0px 3px 30px;
 
         }
-
     }
 }
 
+// Menu Abrir e Fechar
+
+nav .menu-mobile, nav .close-menu-mobile {
+    display: block;
+    cursor: pointer;
+}
+
+nav .menu-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav #header-menu .close-menu-mobile {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+#header-menu {
+    animation: aniClose .3s ease-in;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    width: 40vw;
+    right: -70vw;
+    top: 0;
+    background-color: $bg-black-color;
+    box-shadow: 0px 4px 16px rgba(17,17,26,.4), 0px 8px 24px rgba(17,17,26,.4), 0px 16px 56px rgba(17,17,26,.4);
+}
+
+#header-menu.show {
+    right: 0;
+    animation: aniOpen .5s ease-in;
+}
+
+@keyframes aniOpen {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 0%;
+    }
+}
+
+@keyframes aniClose {
+    0% {
+        right: 0%;
+    }
+    100% {
+        right: -100%;
+    }
+}

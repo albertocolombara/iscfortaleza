@@ -22,6 +22,7 @@ body {
     font-family: $font-family;
     max-width: 1440px;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -66,4 +67,11 @@ img {
 
 .btn-main:hover {
     box-shadow: rgba(241, 61, 6, 0.3) 0px 3px 14px, rgba(236, 50, 4, 0.3) 0px 3px 36px, rgba(238, 41, 6, 0.3) 0px 3px 30px;
+}
+
+.subtitulo {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
 }

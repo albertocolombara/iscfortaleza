@@ -12,10 +12,10 @@
         <nav aria-label="primaria">
             <a href="index.html"><img class="nav-logo" src="img/logos/isc-logo-white.png" alt="Logo ISC"></a>
             <div class="menu-mobile" id="hamburger">
-                <img src="img/icons/bx-menu.svg" alt="Menu">
+                <div class="btn-main" style="display: flex; align-items: center;"><span style="color: white;font-weight: bold;">MENU</span><img src="img/icons/bx-menu.svg" alt="Menu"></div>
             </div>
             <ul class="header-menu" id="header-menu">
-                <div id="hamburger-close" class="close-menu-mobile"><img src="img/icons/xmark-solid.svg" alt="Menu"> </div>
+                <div class="close-menu-mobile" id="hamburger-close"><img src="img/icons/xmark-solid.svg" alt="Menu"></div>
                 <li class="nav-link"><a href="conheca.html">Conheça</a></li>
                 <li class="nav-link"><a href="academyitaliana.html">Escola de Futebol</a></li>
                 <li class="nav-link"><a href="noticias.html">Notícias</a></li>
@@ -85,22 +85,25 @@
     </section>
 
     <section class="home-infos">
-        <div class="container home-infos-grid">
-            <div class="home-infos-contato">
-                <img src="img/icons/wpp.svg" alt="Whatsapp">
-                <h3>Entre em contato</h3>
-                <h4>Reserve seu horário através do nosso Whatsapp</h4> 
-                <a class="btn-main" href="#">Fale Conosco &#10132;</a>
+        <div class="container">
+            <div class="home-infos-grid">
+                <div class="home-infos-contato">
+                    <img src="img/icons/wpp.svg" alt="Whatsapp">
+                    <h3>Entre em contato</h3>
+                    <h4>Reserve seu horário através do nosso Whatsapp</h4> 
+                    <a class="btn-main" href="#">Fale Conosco &#10132;</a>
+                </div>
+                <div class="home-infos-local">
+                    <img src="img/icons/pin.svg" alt="Endereço">
+                    <h3>Onde estamos</h3>
+                    <h4>Av. Prof. Gerardo Rodrigues de Albuquerque, 323 - Luciano Cavalcante, Fortaleza - CE</h4> 
+                </div>
+                <div class="home-infos-insta">
+                    <img src="img/icons/insta.svg" alt="Instagram">
+                    <h3>Nos siga no Instagram - <a href="https://instagram.com/iscfortaleza" target="_blank"><span style="color:#707070">@iscfortaleza</span></a></h3>
+                </div>
             </div>
-            <div class="home-infos-local">
-                <img src="img/icons/pin.svg" alt="Endereço">
-                <h3>Onde estamos</h3>
-                <h4>Av. Prof. Gerardo Rodrigues de Albuquerque, 323 - Luciano Cavalcante, Fortaleza - CE</h4> 
-            </div>
-            <div class="home-infos-insta">
-                <img src="img/icons/insta.svg" alt="Instagram">
-                <h3>Nos siga no Instagram - <a href="https://instagram.com/iscfortaleza" target="_blank"><span style="color:#707070">@iscfortaleza</span></a></h3>
-            </div>
+ 
         </div>
     </section>
 
@@ -140,5 +143,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="app/js/script.js"></script>
 </body>
 </html>

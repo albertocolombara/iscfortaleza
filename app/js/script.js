@@ -9,3 +9,9 @@ hamburger.addEventListener('click', () => {
 hamburgerClose.addEventListener('click', () => {
     headerMenu.classList.toggle("show");
 })
+
+document.onclick = function (e){
+    if(!hamburger.contains(e.target) && !headerMenu.contains(e.target ) ){
+        headerMenu.classList.remove("show");
+    }
+}

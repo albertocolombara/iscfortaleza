@@ -1,47 +1,6 @@
-.page-wrapper {
-    padding-top: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.page-academy {
     background: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(255, 255, 255)),
     url('/img/academy.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    & .wrapper-page {
-        width: 100%;
-        height: 100%;
-        padding: 100px 0 30px 0;
-    
-        & .container {
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;   
-            flex-direction: column;
-            
-            .wrapper-page-top {
-                    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(237,3,32,0.87) 20.8%, rgba(242, 77, 1, 0.84) 74.4% );
-                    width: 70%;
-                    margin: 0 auto;
-                    text-align: center;
-                    padding: 60px 50px;
-    
-                & h1 {
-                    color: $white;
-                    font-size: $large-text;
-                    margin-bottom: 30px;
-                }
-        
-                & p {
-                    color: $white;
-                    font-size: $small-medium-text;
-                    line-height: 26px;
-                }
-            }
-        }
-    }    
 }
 
 .bg-academy {
@@ -50,14 +9,54 @@
 
     & .academy-wrapper {
         display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    & .academy-top {
+
+        & img {
+            margin: 0 auto;
+            display: block;
+            // animation: floating 25s linear infinite forwards;
+        }
+    }
+
+    & .academy-bottom {
+        text-align: center;
+
+        & h2 {
+            font-size: $medium-text;
+            margin-bottom: 30px;
+        }
+    
+        & p {
+            margin: 0 auto;
+            font-size: $small-medium-text;
+            line-height: 26px;
+            color: $text-small-color;
+            width: 70%;
+        }
+    }
+}
+
+.bg-qualidades {
+    background-color: $white;
+    padding-bottom: 100px;
+
+    & .qualidades-wrapper {
+        display: flex;
+        gap: 30px;
         align-items: center;
     }
 
-    & .academy-left, & .academy-right {
+    & .qualidades-left, & .qualidades-right, & .qualidades-right-inverso, & .qualidades-left-inverso {
         flex: 1;
     }
 
-    & .academy-left {
+    & .qualidades-left {
 
         & img {
             margin: 0 auto;
@@ -65,7 +64,32 @@
         }
     }
 
-    & .academy-right {
+    & .qualidades-right {
+        text-align: center;
+
+        & h2 {
+            font-size: $medium-text;
+            margin-bottom: 30px;
+        }
+    
+        & p {
+            margin: 0 auto;
+            font-size: $small-medium-text;
+            line-height: 26px;
+            color: $text-small-color;
+        }
+    }
+
+    & .qualidades-right-inverso {
+
+        & img {
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+    & .qualidades-left-inverso {
+        text-align: center;
 
         & h2 {
             font-size: $medium-text;
@@ -87,6 +111,10 @@
 
     & .matricula-cta {
         text-align: center;
+        box-shadow: rgba(7, 7, 7, 0.1) 0px 3px 14px, rgba(19, 19, 19, 0.1) 0px 3px 36px, rgba(20, 20, 20, 0.1) 0px 3px 30px;
+        padding: 50px 0;
+        width: 80%;
+        margin: 0 auto;
 
         & h2 {
             font-size: $large-text;

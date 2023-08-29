@@ -1,0 +1,447 @@
+@media (max-width: 800px) {
+    header {
+    
+        nav {
+            height: 150px;
+        }
+    }
+
+    #header-menu {
+        width: 60vw;
+    }
+
+    .home-fut7 { 
+        &-info {
+    
+            & p {
+                width: 80%;
+            }
+        }
+    }
+
+    .home-modalidades {
+    
+        &-box {
+            justify-content: center;
+            margin-left: 0;
+        }
+    }
+
+    .home-infos {
+
+        &-grid {
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            'info-contato'
+            'info-local'
+            'info-insta';
+            padding: 50px;
+        }
+    }    
+
+    footer {
+        & .container {
+    
+            & .footer-wrapper {
+                padding: 50px;
+                grid-template-columns: 1fr;
+                grid-gap: 50px;
+    
+                & .footer-menu { 
+    
+                    & ul li {
+                        margin-bottom: 20px;
+                        font-size: $semi-medium-text;
+                    }
+                }
+    
+                & .footer-infos { 
+                    font-size: $semi-medium-text;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+    .hero {
+    
+        &-center {
+
+            & h1 {
+                font-size: $medium-large-text;
+                width: 100%;
+                padding: 0 20px;
+            }
+        }
+    }
+
+    .home-estrutura {
+        flex-direction: column-reverse;
+    }
+
+    .home-escola {
+        flex-direction: column;
+    }
+    
+    .wrapper {
+    
+        & .container {
+            
+            .wrapper-top {
+                    width: 90%;
+                    padding: 60px 20px;
+    
+                & h2 {
+                    font-size: $medium-large-text;
+                }
+        
+            }
+        }
+    }
+
+    .home-modalidades {
+    
+        &-box {
+
+            & h3 {
+                font-size: $semi-medium-text;
+            }
+        }
+    }
+
+    .home-fut7 { 
+    
+        &-info {
+    
+            & h2 {
+                font-size: $medium-large-text;
+                padding: 0 20px;
+            }
+        }
+    }   
+}
+
+@media (max-width: 500px) {
+    #header-menu {
+        width: 80vw;
+    }
+
+    .home-estrutura, .home-escola  {
+        height: 100vh;
+    }
+
+    .wrapper {
+    
+        & .container {
+            
+            .wrapper-top {
+                    width: 100%;
+            }
+        }
+    }
+    
+    .home-infos {
+
+        &-grid {
+            padding: 50px 10px;
+
+        }
+
+        & div {
+            padding: 50px 15px;
+
+            & h3 {
+                font-size: $small-medium-text;
+            }
+
+            & h4 {
+                font-size: $small-text;
+            }
+        }
+
+        &-insta {
+            flex-direction: column !important;
+        }
+    }  
+}
+
+// Pagina Conheça 
+
+@media (max-width: 800px) {
+    .page-intro {
+    
+        & .wrapper-page {
+        
+            & .container {
+                
+                .wrapper-page-top {
+                    width: 90%;
+                    
+                }
+            }
+        }    
+    }
+
+    .bg-estrutura {
+    
+        & .estrutura-cards {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .bg-campeonatos {
+    
+        & .campeonatos-bottom {
+        
+            & p {
+                width: 100%;
+            }
+        }
+    }
+
+    .bg-parceiro {
+    
+        & p {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .page-intro {
+    
+        & .wrapper-page {
+        
+            & .container {
+                
+                .wrapper-page-top {
+                    
+                    & h1 {
+                        font-size: $medium-large-text;
+                    }
+                }
+            }
+        }    
+    }
+
+    .bg-modalidades {
+    
+        & .modalidades-cards {
+            grid-template-columns: 1fr 1fr;
+    
+        }
+    }
+    
+    .bg-racha {
+    
+        & h2 {
+            width: 90%;
+            margin: 150px auto 100px auto;
+        }
+    }
+
+    .bg-campeonatos {
+    
+        & .campeonatos-bottom {
+
+            & p {
+                line-height: 30px;
+            }
+        }
+    }
+    
+    .bg-parceiro {
+    
+        & p {
+            line-height: 30px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .page-intro {
+    
+        & .wrapper-page {
+        
+            & .container {
+                
+                .wrapper-page-top {
+                    width: 100%;
+                    padding: 60px 10px;
+
+                    & h1 {
+                        font-size: 30px;
+                    }
+        
+                }
+            }
+        }    
+    }
+
+    .bg-estrutura {
+
+        & .estrutura-cards {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .bg-modalidades {
+    
+        & .modalidades-cards {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .bg-racha {
+    
+        & h2 {
+            width: 100%;
+            margin: 150px auto 100px auto;
+        }
+    }
+}
+
+// Page Academy
+
+@media (max-width: 800px) {
+    .bg-matricula {
+
+        & .matricula-cta {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .bg-academy {
+
+        & .academy-bottom {
+
+            & p {
+                width: 100%;
+            }
+        }
+    }
+
+    .bg-qualidades {
+    
+        & .qualidades-wrapper {
+            flex-direction: column;
+        }
+
+        & .qualidades-wrapper-inverso {
+            flex-direction: column-reverse;
+        }
+
+        & .qualidades-right {
+
+            & p {
+                line-height: 30px;
+            }
+        }
+
+        & .qualidades-left-inverso {
+        
+            & p {
+                line-height: 30px;
+            }
+        }
+    }
+
+    .bg-matricula {
+
+        & .matricula-cta {
+            width: 90%;
+
+            & h2 {
+                font-size: $medium-large-text;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .bg-matricula {
+    
+        & .matricula-cta {
+            width: 100%;
+    
+            & h2 {
+                font-size: $medium-text;
+            }
+        
+            & p {
+                width: 100%;
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+// Page Noticias
+
+@media (max-width: 600px) {
+    .bg-painel-noticias {
+        background-color: $white;
+        padding: 100px 0;
+    
+        & h2 {
+            margin-bottom: 100px;
+            text-align: center;
+        }
+    
+        & .painel-noticias {
+    
+            & .noticia {
+                flex-direction: column;
+
+                &-left {
+                    width: 90%;
+
+                    & img {
+                        width: 100%;
+                        margin-left: 0;
+                    }
+                }
+    
+                &-right {
+                    width: 90%;
+
+                }   
+            }
+        }
+    }
+}
+
+// Page Posts
+
+@media (max-width: 600px) {
+    .bg-post {
+    
+        & .post {
+    
+            & h1 {
+                font-size: $medium-large-text;
+            }
+        
+            & p {
+                width: 90%;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .bg-post {
+    
+        & .post {
+    
+            & h1 {
+                font-size: $medium-text;
+            }
+        }
+    }
+}

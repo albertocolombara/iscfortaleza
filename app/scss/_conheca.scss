@@ -1,5 +1,3 @@
-
-
 .page-conheca {
     background: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(255, 255, 255)),
     url('/img/conheca.jpg');
@@ -23,9 +21,10 @@
 
     & .estrutura-cards {
         display: grid;
+        justify-content: center;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
-        padding: 0 100px;
+        padding: 0 30px;
 
         & .card {
             display: flex;
@@ -69,7 +68,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
-        padding: 0 100px;
+        padding: 0 30px;
 
         & .card {
             display: flex;
@@ -138,10 +137,7 @@
             line-height: 26px;
             color: $text-small-color;
         }
-
     }
-
-    
 }
 
 .bg-parceiro {

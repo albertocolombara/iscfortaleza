@@ -14,15 +14,16 @@
         flex-direction: column;
         gap: 20px;
 
-        & span.box {
+        span.box {
             color: $white;
             letter-spacing: 8.5px;
             font-weight: bold;
             font-size: $semi-medium-text;
             padding: 5px;
+            text-align: center;
         }
 
-        & h1 {
+        h1 {
             color: $white;
             font-size: $large-text;
             text-align: center;
@@ -54,17 +55,17 @@
             padding: 50px;
             gap: 30px;
             
-            & h2 {
+            h2 {
                 font-size: $medium-large-text;
             }
 
-            & p {
+            p {
                 font-size: $small-medium-text;
                 line-height: 26px;
                 color: $text-small-color;
             }
             
-            & a.btn-main {
+            a.btn-main {
                 align-self: baseline;
             }
         }
@@ -93,7 +94,7 @@
         margin-left: 130px;
         padding: 150px 0;
 
-        & h3 {
+        h3 {
             padding: 30px;
             color: $white;
             background-color: $main-color;
@@ -119,12 +120,12 @@
         text-align: center;
         gap: 30px;
 
-        & h2 {
+        h2 {
             color: $white;
             font-size: $large-text;
         }
 
-        & p {
+        p {
             color: $white;
             width: 50%;
             font-size: $small-medium-text;
@@ -156,17 +157,17 @@
             padding: 50px;
             gap: 30px;
             
-            & h2 {
+            h2 {
                 font-size: $medium-large-text;
             }
 
-            & p {
+            p {
                 font-size: $small-medium-text;
                 line-height: 26px;
                 color: $text-small-color;
             }
             
-            & a.btn-main {
+            a.btn-main {
                 align-self: baseline;
             }
         }
@@ -186,7 +187,7 @@
     padding: 100px 0;
     background-color: $white;
 
-    & .container {
+    .container {
         height: 100%;
         display: flex;
         justify-content: center;
@@ -200,17 +201,16 @@
                 text-align: center;
                 padding: 60px 50px;
 
-            & h2 {
+            h2 {
                 color: $white;
                 font-size: $large-text;
                 margin-bottom: 30px;
             }
     
-            & p {
+            p {
                 color: $white;
                 font-size: $small-medium-text;
                 line-height: 26px;
-                
             }
 
         }
@@ -229,8 +229,7 @@
         grid-gap: 20px;
         padding: 75px;
     
-    
-        & div {
+        div {
             background-color: #171717;
             padding: 50px;
             display: flex;
@@ -241,11 +240,11 @@
             gap: 20px;
             color: $white;
 
-            & h3 {
+            h3 {
                 font-size: $medium-text;
             }
 
-            & h4 {
+            h4 {
                 font-size: $semi-medium-text;
                 color: $text-alt-color;
             }
@@ -264,15 +263,15 @@
         grid-area: info-insta;
         flex-direction: row !important;
         
-        & h3 {
+        h3 {
             font-size: $semi-medium-text !important;
         }
 
-        & a:hover {
+        a {
             transition: opacity .3s;
         }
 
-        & a:hover {
+        a:hover {
             opacity: .4;
         }
     }

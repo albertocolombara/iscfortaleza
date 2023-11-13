@@ -1,10 +1,10 @@
 .page-posts {
-    background: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(255, 255, 255)),
+    background: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(241, 241, 241)),
     url('/img/posts.jpg');
 
-    & .wrapper-page-top-image {
+    .wrapper-page-top-image {
     
-        & img {
+        img {
             box-shadow: 0px 4px 16px rgba(17,17,26,0.05), 0px 8px 32px rgba(17,17,26,0.05);
         }
     }
@@ -14,10 +14,10 @@
     background-color: $white;
     padding: 30px 0 120px 0;
 
-    & .post {
+    .post {
         position: relative;
 
-        & h5 {
+        h5 {
             color: $text-small-color;
             font-size: 14px;
             font-family: Montserrat, sans-serif;
@@ -26,27 +26,27 @@
             display: block;
         }
     
-        & h1 {
+        h1 {
             font-size: $large-text;
             text-align: center;
             margin-bottom: 40px;
         }
     
-        & p {
+        p {
             text-align: justify;
             width: 70%;
             margin: 0 auto;
             font-size: $small-medium-text;
             line-height: 26px;
             color: $text-small-color;
-        }
 
-        & p:last-of-type {
-            margin-bottom: 40px;
+            &:last-of-type {
+                margin-bottom: 40px;
+            }
         }
     }
 
-    & a {
+    a {
         text-align: center;
         margin: 0 auto;
         position: absolute;

@@ -1,5 +1,5 @@
 .page-academy {
-    background: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(255, 255, 255)),
+    background: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(241, 241, 241)),
     url('/img/academy.jpg');
 }
 
@@ -7,7 +7,7 @@
     background-color: $white;
     padding: 100px 0;
 
-    & .academy-wrapper {
+    .academy-wrapper {
         display: flex;
         gap: 30px;
         align-items: center;
@@ -15,23 +15,23 @@
         flex-direction: column;
     }
 
-    & .academy-top {
+    .academy-top {
 
-        & img {
+        img {
             margin: 0 auto;
             display: block;
         }
     }
 
-    & .academy-bottom {
+    .academy-bottom {
         text-align: center;
 
-        & h2 {
+        h2 {
             font-size: $medium-text;
             margin-bottom: 30px;
         }
     
-        & p {
+        p {
             margin: 0 auto;
             font-size: $small-medium-text;
             line-height: 26px;
@@ -45,33 +45,33 @@
     background-color: $white;
     padding-bottom: 100px;
 
-    & .qualidades-wrapper {
+    .qualidades-wrapper {
         display: flex;
         gap: 30px;
         align-items: center;
     }
 
-    & .qualidades-left, & .qualidades-right, & .qualidades-right-inverso, & .qualidades-left-inverso {
+    .qualidades-left, .qualidades-right, .qualidades-right-inverso, .qualidades-left-inverso {
         flex: 1;
     }
 
-    & .qualidades-left {
+    .qualidades-left {
 
-        & img {
+        img {
             margin: 0 auto;
             display: block;
         }
     }
 
-    & .qualidades-right {
+    .qualidades-right {
         text-align: center;
 
-        & h2 {
+        h2 {
             font-size: $medium-text;
             margin-bottom: 30px;
         }
     
-        & p {
+        p {
             margin: 0 auto;
             font-size: $small-medium-text;
             line-height: 26px;
@@ -79,23 +79,23 @@
         }
     }
 
-    & .qualidades-right-inverso {
+    .qualidades-right-inverso {
 
-        & img {
+        img {
             margin: 0 auto;
             display: block;
         }
     }
 
-    & .qualidades-left-inverso {
+    .qualidades-left-inverso {
         text-align: center;
 
-        & h2 {
+        h2 {
             font-size: $medium-text;
             margin-bottom: 30px;
         }
     
-        & p {
+        p {
             margin: 0 auto;
             font-size: $small-medium-text;
             line-height: 26px;
@@ -108,20 +108,20 @@
     background-color: $white;
     padding: 50px 0 100px 0;
 
-    & .matricula-cta {
+    .matricula-cta {
         text-align: center;
         box-shadow: rgba(7, 7, 7, 0.1) 0px 3px 14px, rgba(19, 19, 19, 0.1) 0px 3px 36px, rgba(20, 20, 20, 0.1) 0px 3px 30px;
         padding: 50px 0;
         width: 80%;
         margin: 0 auto;
 
-        & h2 {
+        h2 {
             font-size: $large-text;
             margin-bottom: 30px;
             padding: 0 10px;
         }
     
-        & p {
+        p {
             width: 70%;
             margin: 0 auto;
             margin-bottom: 30px;

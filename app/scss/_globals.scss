@@ -7,9 +7,11 @@
     scroll-behavior: smooth;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 @font-face {
-    font-family: "Monument";
-    src: url('../fonts/MonumentExtended-Regular.otf') format('opentype');
+    font-family: "Monument E";
+    src: url("/app/fonts/MonumentExtended-Regular.otf") format('opentype');
 }
 
 html {
@@ -20,13 +22,12 @@ body {
     background-color: $bg-black-color;
     color: $text-main-color;
     font-family: $font-family;
-    max-width: 1440px;
     margin: 0 auto;
     overflow-x: hidden;
 }
 
 h1, h2, h3 {
-    font-family: "Monument", Montserrat;
+    font-family: "Monument E", "Montserrat", sans-serif !important;
     letter-spacing: 1.7px;
 }
 
@@ -98,12 +99,12 @@ img {
     background-position: center !important;
     background-repeat: no-repeat !important;
 
-    & .wrapper-page {
+    .wrapper-page {
         width: 100%;
         height: 100%;
         padding: 100px 0 30px 0;
     
-        & .container {
+        .container {
             height: 100%;
             display: flex;
             justify-content: center;
@@ -117,13 +118,13 @@ img {
                     text-align: center;
                     padding: 60px 50px;
     
-                & h1 {
+                h1 {
                     color: $white;
                     font-size: $large-text;
                     margin-bottom: 30px;
                 }
         
-                & p {
+                p {
                     color: $white;
                     font-size: $small-medium-text;
                     line-height: 26px;

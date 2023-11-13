@@ -13,7 +13,7 @@
     .home-fut7 { 
         &-info {
     
-            & p {
+            p {
                 width: 80%;
             }
         }
@@ -40,23 +40,23 @@
     }    
 
     footer {
-        & .container {
+        .container {
     
-            & .footer-wrapper {
-                padding: 50px;
+            .footer-wrapper {
+                padding: 50px 20px;
                 grid-template-columns: 1fr;
                 grid-gap: 50px;
     
-                & .footer-menu { 
+                .footer-menu { 
     
-                    & ul li {
+                    ul li {
                         margin-bottom: 20px;
-                        font-size: $semi-medium-text;
+                        font-size: $small-medium-text;
                     }
                 }
     
-                & .footer-infos { 
-                    font-size: $semi-medium-text;
+                .footer-infos { 
+                    font-size: $small-medium-text;
                 }
             }
         }
@@ -69,7 +69,7 @@
     
         &-center {
 
-            & h1 {
+            h1 {
                 font-size: $medium-large-text;
                 width: 100%;
                 padding: 0 20px;
@@ -87,13 +87,13 @@
     
     .wrapper {
     
-        & .container {
+        .container {
             
             .wrapper-top {
                     width: 90%;
                     padding: 60px 20px;
     
-                & h2 {
+                h2 {
                     font-size: $medium-large-text;
                 }
         
@@ -105,7 +105,7 @@
     
         &-box {
 
-            & h3 {
+            h3 {
                 font-size: $semi-medium-text;
             }
         }
@@ -115,7 +115,7 @@
     
         &-info {
     
-            & h2 {
+            h2 {
                 font-size: $medium-large-text;
                 padding: 0 20px;
             }
@@ -126,6 +126,41 @@
 @media (max-width: 500px) {
     #header-menu {
         width: 80vw;
+    }
+
+    .hero {
+    
+        &-center {
+            padding: 0 10px;
+
+            span.box {
+                font-size: $small-medium-text;
+            }
+
+            h1 {
+                font-size: $medium-text;
+            }
+        }
+    }
+
+    .home-estrutura {
+    
+        &-left {
+    
+            &-info {
+                padding: 50px 30px;
+            }
+        }
+    }
+
+    .home-escola {
+    
+        &-right {
+    
+            &-info {
+                padding: 50px 30px;
+            }
+        }
     }
 
     .home-estrutura, .home-escola  {
@@ -149,14 +184,14 @@
 
         }
 
-        & div {
+        div {
             padding: 50px 15px;
 
-            & h3 {
+            h3 {
                 font-size: $small-medium-text;
             }
 
-            & h4 {
+            h4 {
                 font-size: $small-text;
             }
         }
@@ -172,9 +207,9 @@
 @media (max-width: 800px) {
     .page-intro {
     
-        & .wrapper-page {
+        .wrapper-page {
         
-            & .container {
+            .container {
                 
                 .wrapper-page-top {
                     width: 90%;
@@ -186,16 +221,16 @@
 
     .bg-estrutura {
     
-        & .estrutura-cards {
+        .estrutura-cards {
             grid-template-columns: 1fr 1fr;
         }
     }
 
     .bg-campeonatos {
     
-        & .campeonatos-bottom {
+        .campeonatos-bottom {
         
-            & p {
+            p {
                 width: 100%;
             }
         }
@@ -203,7 +238,7 @@
 
     .bg-parceiro {
     
-        & p {
+        p {
             width: 100%;
         }
     }
@@ -212,13 +247,13 @@
 @media (max-width: 600px) {
     .page-intro {
     
-        & .wrapper-page {
+        .wrapper-page {
         
-            & .container {
+            .container {
                 
                 .wrapper-page-top {
                     
-                    & h1 {
+                    h1 {
                         font-size: $medium-large-text;
                     }
                 }
@@ -228,7 +263,7 @@
 
     .bg-modalidades {
     
-        & .modalidades-cards {
+        .modalidades-cards {
             grid-template-columns: 1fr 1fr;
     
         }
@@ -236,7 +271,7 @@
     
     .bg-racha {
     
-        & h2 {
+        h2 {
             width: 90%;
             margin: 150px auto 100px auto;
         }
@@ -244,9 +279,9 @@
 
     .bg-campeonatos {
     
-        & .campeonatos-bottom {
+        .campeonatos-bottom {
 
-            & p {
+            p {
                 line-height: 30px;
             }
         }
@@ -254,7 +289,7 @@
     
     .bg-parceiro {
     
-        & p {
+        p {
             line-height: 30px;
         }
     }
@@ -263,15 +298,15 @@
 @media (max-width: 500px) {
     .page-intro {
     
-        & .wrapper-page {
+        .wrapper-page {
         
-            & .container {
+            .container {
                 
                 .wrapper-page-top {
                     width: 100%;
                     padding: 60px 10px;
 
-                    & h1 {
+                    h1 {
                         font-size: 30px;
                     }
         
@@ -282,23 +317,47 @@
 
     .bg-estrutura {
 
-        & .estrutura-cards {
+        .estrutura-cards {
             grid-template-columns: 1fr;
         }
     }
 
     .bg-modalidades {
+
+        .modalidades-top {
     
-        & .modalidades-cards {
+            h2 {
+                font-size: $semi-medium-text;
+            }
+        }
+    
+        .modalidades-cards {
             grid-template-columns: 1fr;
         }
     }
 
     .bg-racha {
     
-        & h2 {
+        h2 {
             width: 100%;
             margin: 150px auto 100px auto;
+        }
+    }
+
+    .bg-campeonatos {
+    
+        .campeonatos-bottom {
+                
+            h3 {
+                font-size: $semi-medium-text;
+            }
+        }
+    }
+
+    .bg-parceiro {
+    
+        h3 {
+            font-size: $semi-medium-text;
         }
     }
 }
@@ -308,7 +367,7 @@
 @media (max-width: 800px) {
     .bg-matricula {
 
-        & .matricula-cta {
+        .matricula-cta {
             width: 90%;
         }
     }
@@ -317,9 +376,9 @@
 @media (max-width: 600px) {
     .bg-academy {
 
-        & .academy-bottom {
+        .academy-bottom {
 
-            & p {
+            p {
                 width: 100%;
             }
         }
@@ -327,24 +386,24 @@
 
     .bg-qualidades {
     
-        & .qualidades-wrapper {
+        .qualidades-wrapper {
             flex-direction: column;
         }
 
-        & .qualidades-wrapper-inverso {
+        .qualidades-wrapper-inverso {
             flex-direction: column-reverse;
         }
 
-        & .qualidades-right {
+        .qualidades-right {
 
-            & p {
+            p {
                 line-height: 30px;
             }
         }
 
-        & .qualidades-left-inverso {
+        .qualidades-left-inverso {
         
-            & p {
+            p {
                 line-height: 30px;
             }
         }
@@ -352,10 +411,10 @@
 
     .bg-matricula {
 
-        & .matricula-cta {
+        .matricula-cta {
             width: 90%;
 
-            & h2 {
+            h2 {
                 font-size: $medium-large-text;
             }
         }
@@ -365,14 +424,14 @@
 @media (max-width: 500px) {
     .bg-matricula {
     
-        & .matricula-cta {
+        .matricula-cta {
             width: 100%;
     
-            & h2 {
+            h2 {
                 font-size: $medium-text;
             }
         
-            & p {
+            p {
                 width: 100%;
                 padding: 0 20px;
             }
@@ -387,20 +446,20 @@
         background-color: $white;
         padding: 100px 0;
     
-        & h2 {
+        h2 {
             margin-bottom: 100px;
             text-align: center;
         }
     
-        & .painel-noticias {
+        .painel-noticias {
     
-            & .noticia {
+            .noticia {
                 flex-direction: column;
 
                 &-left {
                     width: 90%;
 
-                    & img {
+                    img {
                         width: 100%;
                         margin-left: 0;
                     }
@@ -420,13 +479,13 @@
 @media (max-width: 600px) {
     .bg-post {
     
-        & .post {
+        .post {
     
-            & h1 {
+            h1 {
                 font-size: $medium-large-text;
             }
         
-            & p {
+            p {
                 width: 90%;
                 line-height: 30px;
             }
@@ -437,9 +496,9 @@
 @media (max-width: 500px) {
     .bg-post {
     
-        & .post {
+        .post {
     
-            & h1 {
+            h1 {
                 font-size: $medium-text;
             }
         }

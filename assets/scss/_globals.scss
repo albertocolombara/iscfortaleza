@@ -11,7 +11,10 @@
 
 @font-face {
     font-family: "Monument E";
-    src: url("/app/fonts/MonumentExtended-Regular.otf") format('opentype');
+    src: url("/assets/fonts/MonumentExtended-Regular.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
 }
 
 html {
@@ -27,7 +30,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: "Monument E", "Montserrat", sans-serif !important;
+    font-family: "Monument E", "Montserrat", Arial, Helvetica, sans-serif !important;
     letter-spacing: 1.7px;
 }
 
